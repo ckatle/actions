@@ -1,9 +1,5 @@
 extends: default
 
-ignore: |
-  .pre-commit-config.yaml
-  .yamllint.yml
-
 rules:
   document-start:
     present: false
