@@ -4,5 +4,4 @@ rules:
   document-start:
     present: false
   truthy:
-    allowed-values: ['true', 'false', 'on']
-    check-keys: true
+    ignore: .github/workflows/*.yml
