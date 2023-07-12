@@ -1,0 +1,12 @@
+extends: default
+
+ignore: |
+  .pre-commit-config.yaml
+  .yamllint.yml
+
+rules:
+  document-start:
+    present: false
+  truthy:
+    allowed-values: ['true', 'false', 'on']
+    check-keys: true
