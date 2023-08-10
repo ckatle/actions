@@ -24,7 +24,9 @@
   "prHourlyLimit": 0,
   "timezone": "Europe/Berlin",
   "schedule": [
-    "nonOfficeHours"
+    "after 10pm every weekday",
+    "before 5am every weekday",
+    "every weekend"
   ],
   "rebaseWhen": "behind-base-branch",
   "rollbackPrs": true
