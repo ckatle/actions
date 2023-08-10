@@ -7,15 +7,15 @@ jobs:
     name: "Run CI"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3
         with:
           fetch-depth: 1
-      - uses: WillAbides/setup-go-faster@v1.10.0
+      - uses: WillAbides/setup-go-faster@a8a2fe60be29c0fbfd7480eb6175f5cbf9c7f223 # v1.10.0
         with:
           go-version: 1.21.x
       - run: "go test ./..."
       - run: "go vet ./..."
-      - uses: dominikh/staticcheck-action@v1.3.0
+      - uses: dominikh/staticcheck-action@ba605356b4b29a60e87ab9404b712f3461e566dc # v1.3.0
         with:
           version: "2021.1.1"
           install-go: false
