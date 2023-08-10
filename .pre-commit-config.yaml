@@ -3,6 +3,12 @@ repos:
     rev: v4.4.0
     hooks:
       - id: check-yaml
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.24.0
+    hooks:
+      - id: check-jsonschema
+        files: ^renovate\.json$
+        args: ["--check-metaschema"]
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.32.0
     hooks:
