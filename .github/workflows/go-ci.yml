@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3
         with:
           fetch-depth: 1
-      - uses: WillAbides/setup-go-faster@a8a2fe60be29c0fbfd7480eb6175f5cbf9c7f223 # v1.10.0
+      - uses: WillAbides/setup-go-faster@a6cb7547e06461b71319bd2a8041685497f86e53 # v1.10.1
         with:
           go-version: 1.21.x
       - run: "go test ./..."
