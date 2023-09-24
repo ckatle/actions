@@ -7,7 +7,7 @@ jobs:
     name: "Run CI"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
+      - uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
         with:
           fetch-depth: 1
       - uses: WillAbides/setup-go-faster@3309824c1c324d6fdbd209e13199168c660b43d5 # v1.12.0
