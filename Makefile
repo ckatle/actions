@@ -1,3 +1,5 @@
+.PHONY: *
+
 pc: pca pcr
 
 pca: ## Updating hooks automatically

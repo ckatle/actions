@@ -1,3 +1,4 @@
+---
 name: "OpenAPI Specification CI"
 on:
   workflow_call
