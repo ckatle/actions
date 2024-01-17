@@ -4,17 +4,17 @@ ci:
   autoupdate_schedule: weekly
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: check-yaml
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.24.0
+    rev: 0.27.3
     hooks:
       - id: check-jsonschema
         files: ^renovate\.json$
         args: ["--check-metaschema"]
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.32.0
+    rev: v1.33.0
     hooks:
       - id: yamllint
         args: [--strict]

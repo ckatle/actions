@@ -1,0 +1,12 @@
+---
+name: 'govulncheck'
+
+on:
+  workflow_call
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run govulncheck
+        uses: golang/govulncheck-action@v1
