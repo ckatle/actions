@@ -20,7 +20,7 @@ jobs:
       - run: "go test ./..."
       - run: "go vet ./..."
       - name: Run Staticcheck
-        uses: dominikh/staticcheck-action@ba605356b4b29a60e87ab9404b712f3461e566dc # v1.3.0
+        uses: dominikh/staticcheck-action@fe1dd0c3658873b46f8c9bb3291096a617310ca6 # v1.3.1
         with:
           version: "latest"
           install-go: false
