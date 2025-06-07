@@ -9,5 +9,8 @@ on:
   pull_request:
 
 jobs:
-  lint:
+  yaml-lint:
     uses: ./.github/workflows/yaml-lint.yml
+
+  action-lint:
+    uses: ./.github/workflows/action-lint.yml

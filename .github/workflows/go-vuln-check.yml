@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run govulncheck
-        uses: golang/govulncheck-action@3a32958c2706f7048305d5a2e53633d7e37e97d0 # v1
+        uses: golang/govulncheck-action@b625fbe08f3bccbe446d94fbf87fcc875a4f50ee # v1
