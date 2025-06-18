@@ -1,12 +1,15 @@
 ---
-name: 'govulncheck'
+name: Vulnerability Scanning
 
 on:
   workflow_call
 
 jobs:
-  ci:
+  govulncheck_job:
+    name: Run govulncheck
     runs-on: ubuntu-latest
     steps:
-      - name: Run govulncheck
+      - id: govulncheck
         uses: golang/govulncheck-action@b625fbe08f3bccbe446d94fbf87fcc875a4f50ee # v1
+        with:
+          go-package: ./...
