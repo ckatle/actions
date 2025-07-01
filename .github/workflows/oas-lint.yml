@@ -1,0 +1,21 @@
+---
+name: Run Spectral on OpenAPI Specification CI
+on:
+  workflow_call:
+    inputs:
+      file-glob:
+        required: true
+        type: string
+
+jobs:
+  spectral:
+    name: Run Spectral
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Run Spectral
+        uses: stoplightio/spectral-action@v0.8.12
+        with:
+          file_glob: ${{ inputs.file-glob }}
