@@ -1,0 +1,14 @@
+---
+extends: default
+
+rules:
+  # needed for renovate bot
+  comments:
+    ignore: .github/workflows/*.yaml
+  line-length:
+    max: 120
+  quoted-strings:
+    quote-type: double
+    required: false
+  truthy:
+    ignore: .github/workflows/*.yaml
