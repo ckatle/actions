@@ -5,7 +5,7 @@ on:
 
 jobs:
   lint:
-    uses: ./.github/workflows/yaml-lint.yml
+    uses: ./.github/workflows/yaml-lint.yaml
 
   validate:
     runs-on: ubuntu-latest

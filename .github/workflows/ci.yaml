@@ -11,7 +11,7 @@ on:
 
 jobs:
   yaml-lint:
-    uses: ./.github/workflows/yaml-lint.yml
+    uses: ./.github/workflows/yaml-lint.yaml
 
   action-lint:
-    uses: ./.github/workflows/action-lint.yml
+    uses: ./.github/workflows/action-lint.yaml
