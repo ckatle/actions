@@ -1,0 +1,31 @@
+---
+version: "3"
+
+tasks:
+  all:
+    desc: Run all pre-commit hooks on a repository
+    aliases:
+      - a
+    preconditions:
+      - test -f .pre-commit-config.yaml
+    cmds:
+      - pre-commit run --all-files
+
+  run:
+    desc: Run pre-commit hooks against modified files
+    aliases:
+      - r
+    preconditions:
+      - test -f .pre-commit-config.yaml
+    cmds:
+      - pre-commit run
+
+  update:
+    desc: Updating pre-commit hooks automatically
+    aliases:
+      - u
+      - up
+    preconditions:
+      - test -f .pre-commit-config.yaml
+    cmds:
+      - pre-commit autoupdate
