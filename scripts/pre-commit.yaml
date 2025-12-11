@@ -3,16 +3,33 @@ version: "3"
 
 tasks:
   all:
-    desc: Run all pre-commit hooks on a repository
+    desc: Run all pre-commit hooks on a repository.
     aliases:
       - a
     preconditions:
       - test -f .pre-commit-config.yaml
     cmds:
+      - task: update
       - pre-commit run --all-files
 
+  clean:
+    desc: Clean out cached pre-commit files.
+    aliases:
+      - c
+    preconditions:
+      - test -f .pre-commit-config.yaml
+    cmds:
+      - pre-commit clean
+
+  gc:
+    desc: Clean unused cached repos.
+    preconditions:
+      - test -f .pre-commit-config.yaml
+    cmds:
+      - pre-commit gc
+
   run:
-    desc: Run pre-commit hooks against modified files
+    desc: Run pre-commit hooks against modified files.
     aliases:
       - r
     preconditions:
@@ -21,11 +38,11 @@ tasks:
       - pre-commit run
 
   update:
-    desc: Updating pre-commit hooks automatically
+    desc: Updating pre-commit hooks automatically.
     aliases:
       - u
       - up
     preconditions:
       - test -f .pre-commit-config.yaml
     cmds:
-      - pre-commit autoupdate
+      - pre-commit autoupdate --jobs $PC_JOBS
