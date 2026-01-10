@@ -46,3 +46,4 @@ tasks:
       - test -f .pre-commit-config.yaml
     cmds:
       - pre-commit autoupdate --jobs $PC_JOBS
+      - defer: {task: gc}
