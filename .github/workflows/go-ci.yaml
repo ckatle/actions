@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 1
 
       - name: Setup a go environment
-        uses: WillAbides/setup-go-faster@a0ff5217a7d2567ed6ff1aa2b7d8f9d58173b2c9 # v1.14.0
+        uses: WillAbides/setup-go-faster@639648f05d976dbc4cb976e9d94ba19efc7b9294 # v1.15.0
         with:
           go-version: "stable"
 
