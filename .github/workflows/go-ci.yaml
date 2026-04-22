@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           fetch-depth: 1
 
       - name: Setup a go environment
-        uses: WillAbides/setup-go-faster@a0ff5217a7d2567ed6ff1aa2b7d8f9d58173b2c9 # v1.14.0
+        uses: WillAbides/setup-go-faster@639648f05d976dbc4cb976e9d94ba19efc7b9294 # v1.15.0
         with:
           go-version: "stable"
 
@@ -24,7 +24,7 @@ jobs:
       - run: "go vet ./..."
 
       - name: Run Staticcheck
-        uses: dominikh/staticcheck-action@024238d2898c874f26d723e7d0ff4308c35589a2 # v1.4.0
+        uses: dominikh/staticcheck-action@9716614d4101e79b4340dd97b10e54d68234e431 # v1.4.1
         with:
           version: "latest"
           install-go: false
