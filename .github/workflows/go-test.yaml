@@ -20,4 +20,4 @@ jobs:
         run: go build -v ./...
 
       - name: Test
-        uses: robherley/go-test-action@ded24db7182143ded3264c543f5dc3dd1e5bb5fe # v1
+        uses: robherley/go-test-action@2f859e0c8769d755d3174eecb9af8f64660827f3 # v1
